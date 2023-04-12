@@ -71,10 +71,10 @@ export default function Footer() {
 
 const Container = styled.div`
     width: 100vw;
-    height: 50px;
+    height: 60px;
     background: #A8CEFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px 15px 0px 0px;
+    box-shadow: 4px 0px 4px 0px #00000040;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -90,18 +90,18 @@ const Container = styled.div`
 `;
 const IconCircle = styled.div`
     height: 40px;
-    background: #FEDBA1;
+    background-color: #FBFBC7;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 5px;
     padding-right: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
     font-size: 15px;
     cursor: pointer;
     :hover{
-        background-color: #DCC2DE;
+        background: linear-gradient(45deg, #FAF480, #FFD5A4) border-box;
     }
     :active{
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
