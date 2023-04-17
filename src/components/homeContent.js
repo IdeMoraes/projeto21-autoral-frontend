@@ -3,8 +3,6 @@ import styled from "styled-components";
 export default function HomeContent() {
   return (
     <Container>
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas risus eu dui aliquet, in sodales dolor feugiat. Donec gravida, erat sed elementum euismod, quam justo condimentum nunc, nec euismod purus sem vel ex. In hac habitasse platea dictumst. Sed suscipit hendrerit odio, vel efficitur tellus molestie ac. In posuere est a tellus porttitor aliquam. Sed dictum tellus eu metus lobortis rhoncus eu ut odio. Sed at eros non tellus sagittis vulputate. Nam ipsum nisi, tincidunt sed urna vel, vulputate dignissim velit. Ut aliquam lacinia est, ac tempus lacus tincidunt convallis.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus quis dolor efficitur mattis. Morbi efficitur est est, quis ullamcorper nunc congue ut. Aenean eleifend et leo ut molestie. In lacus justo, ullamcorper quis iaculis non, commodo vitae ex. Ut commodo dui ac maximus efficitur. Sed sit amet dolor sed ipsum mollis porta sed vitae tellus. Vivamus laoreet felis justo, id malesuada turpis tempor tincidunt. Duis faucibus maximus sem sed pellentesque. Donec dictum sed dolor ut placerat. Mauris ac fringilla augue. Integer lobortis lacus lobortis ligula placerat, eget mattis sapien porttitor.
@@ -104,7 +102,6 @@ Vestibulum eros tortor, bibendum a lorem eget, molestie luctus diam. Fusce viver
 Nunc scelerisque blandit odio. Maecenas tempor semper dolor a laoreet. Morbi arcu neque, gravida ut sapien at, aliquam condimentum dolor. Etiam euismod justo vel augue fringilla, venenatis commodo felis semper. Ut ut dui ipsum. Nam volutpat sem quis euismod facilisis. Curabitur ligula sem, faucibus sit amet lacinia a, ullamcorper a est. Phasellus arcu nisi, commodo sed purus vel, commodo cursus magna. Nam pharetra volutpat metus quis congue. Cras facilisis sem nec ligula mattis, vitae tempor sapien viverra. Nullam dictum fringilla nulla eu commodo. Praesent quis condimentum enim, sed rutrum tortor.
 
 Integer egestas neque condimentum lorem tempor posuere. Nunc lacinia rhoncus felis eget fermentum. Vivamus convallis ut lorem nec euismod. Vestibulum a posuere tellus. Nullam lobortis ante odio. Etiam aliquet euismod nisi. Maecenas vel viverra dui. Vestibulum finibus bibendum auctor. Donec ex metus, malesuada varius molestie at, convallis ut leo. Duis magna enim, pulvinar a felis non, tincidunt mattis elit. Maecenas convallis lacus sit amet lacinia bibendum. Curabitur vel tristique tortor. Fusce porttitor leo semper lectus sagittis, a ultrices justo commodo. Praesent nec eros semper, sollicitudin velit sit amet, porta turpis. 
-
     </Container>
   )
 }
@@ -117,6 +114,8 @@ const Container = styled.div`
     border-left:0;
     background: linear-gradient(#FBC1BF,#A8CEFF) border-box;
     overflow-y: scroll;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 `; 
-  
+
+export {Container}

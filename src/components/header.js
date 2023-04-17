@@ -2,8 +2,6 @@ import Image from 'next/image';
 import styled from "styled-components";
 import logomark from '../../public/images/logomark.png';
 import { GiStethoscope } from 'react-icons/gi';
-import Link from 'next/link';
-
 
 export default function Header({setAuthForm}) {
   return (
@@ -19,9 +17,6 @@ export default function Header({setAuthForm}) {
         </div>
         <GiStethoscope style={{color: '#F25022', fontSize: "0.5em", margin:"0 0 0 25px"}} onClick={()=>{setAuthForm(true)}}/>
       </div>
-
-
-      
     </Container>
   )
 }

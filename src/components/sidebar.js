@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import UserContext from "../contexts/contexts.js";
 
-export default function Sidebar() {
+export default function Sidebar({setActiveContent}) {
+    const {user} = useContext(UserContext);
+
   return (
     <Container>
         <Tab>Nossa história</Tab>
@@ -10,18 +14,17 @@ export default function Sidebar() {
         <Tab>Nossos contatos</Tab>
         <Tab>Nossas publicações</Tab>
         <Tab>Depoimentos</Tab>
-        <Tab>Calendário</Tab>
-        <Tab>Comprovantes</Tab>
-        <Tab>Faturamento</Tab>
-        <Tab>Prontuários</Tab>
-        <Tab>Controlar acesso</Tab>
-
+        {(user.type===1 || user.type ===2) && <Tab onClick={()=>{setActiveContent('CalendarContent')}}>Calendário</Tab>}
+        {(user.type===1 || user.type ===2) && <Tab>Comprovantes</Tab>}
+        {(user.type===1) && <Tab>Faturamento</Tab>}
+        {(user.type===1) && <Tab>Prontuários</Tab>}
+        {(user.type===1) && <Tab>Controlar acesso</Tab>}
     </Container>
   )
 }
 
 const Container = styled.div`
-padding-top: 5px;
+    padding-top: 5px;
     width: 280px;
     min-height: 100%;
     border-radius: 20px 0 0 20px;
