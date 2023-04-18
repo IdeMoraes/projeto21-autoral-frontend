@@ -27,15 +27,17 @@ export default function RegisterPatient({appointment, setAppointment, setCurrent
         },
         responsible,
         phoneNumber,
-        email,
-        created_by: user.name
+        email
     }
     async function handleSubmit(){
-        const patient = await registerPatient(body, user.token);
-        alert('Paciente cadastrado com sucesso! \u{1F973}');
-        setAppointment({...appointment, patient_id: patient.id, type_id: 1});
-        setCurrentStep('FinalDetails');
-        console.log(patient.id);
+        try {
+            const patient = await registerPatient(body, user.token);
+            alert('Paciente cadastrado com sucesso! \u{1F973}');
+            setAppointment({...appointment, patient_id: patient.id, type_id: 1});
+            setCurrentStep('FinalDetails');
+        } catch (error) {
+            console.log(error.response.data);
+        }
     }
     return(
         <RegisterPatientContainer>

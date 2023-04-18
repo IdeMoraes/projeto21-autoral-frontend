@@ -36,7 +36,7 @@ const Container = styled.div`
     align-items: center;
 `;
 const Tab = styled.div`
-    background: #FBFBC7;
+    background-color: #FBFBC7;
     width: 200px;
     height: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

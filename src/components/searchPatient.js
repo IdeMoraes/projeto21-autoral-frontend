@@ -24,7 +24,7 @@ export default function SearchPatient({appointment, setAppointment, setCurrentSt
           }
           fetchData();
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, []); 
+    }, []); 
     function handlePatientSelection(id){
         setAppointment({...appointment, patient_id: id});
         setCurrentStep('FinalDetails');
@@ -45,7 +45,7 @@ export default function SearchPatient({appointment, setAppointment, setCurrentSt
         </div>
         <PatientsContainer>
             {filteredPatients.map(patient => 
-            <PacientContainer key={patient.name} onClick={()=>{handlePatientSelection(patient.id)}}>{patient.name}</PacientContainer>            )}
+            <PacientContainer key={patient.name} onClick={()=>{handlePatientSelection(patient.id)}}>{patient.name}</PacientContainer>)}
         </PatientsContainer>
         </SearchPatientContainer>
     );

@@ -38,3 +38,19 @@ export async function listAllPatients(token) {
   });
   return res.data;
 }
+export async function scheduleAppointment(body, token) {
+  const res = await axios.post(`${BASE_URL}/appointment`, body , {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+  return res.data;
+}
+export async function listAppointmentByDate(date, token) {
+  const res = await axios.get(`${BASE_URL}/appointment/${date}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+  return res.data;
+}
